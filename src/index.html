@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app" class="p-3">
+      <h1 class="title">Leaderboard</h1>
+      <div class="flex">
+        <div class="w-half p-3">
+          <div class="flex justify-between mb-3">
+            <h2>Recent scores</h2>
+            <button id="refresh">Refresh</button>
+          </div>
+          <table class="w-full">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="w-full">
+                <td>John</td>
+                <td>200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="w-half p-3">
+          <h1 class="mb-3">Add your score</h1>
+          <form id="score-form" class="text-right">
+            <input type="text" class="input mb-1" placeholder="Your name">
+            <input type="text" class="input mb-1" placeholder="Your score">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
