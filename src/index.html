@@ -22,19 +22,14 @@
                 <th>Score</th>
               </tr>
             </thead>
-            <tbody>
-              <tr class="w-full">
-                <td>John</td>
-                <td>200</td>
-              </tr>
-            </tbody>
+            <tbody id="tbody"></tbody>
           </table>
         </div>
         <div class="w-half p-3">
           <h1 class="mb-3">Add your score</h1>
           <form id="score-form" class="text-right">
-            <input type="text" class="input mb-1" placeholder="Your name">
-            <input type="text" class="input mb-1" placeholder="Your score">
+            <input type="text" id="name" class="input mb-1" placeholder="Your name" />
+            <input type="number" id="score" class="input mb-1" placeholder="Your score" />
             <button type="submit">Submit</button>
           </form>
         </div>
