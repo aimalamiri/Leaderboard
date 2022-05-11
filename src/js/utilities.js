@@ -22,4 +22,16 @@ const fetchUsers = async () => {
   return await data.json();
 };
 
-export { insertUsers, fetchUsers};
+const addUser = async (data) => {
+  await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ user: data[0], score: data[1] }),
+  }).catch((error) => {
+    return error;
+  });
+};
+
+export { insertUsers, fetchUsers, addUser };
