@@ -1,5 +1,6 @@
 import './scss/index.scss';
 import { insertUsers, addUser } from './js/utilities';
+
 const scoreForm = document.querySelector('#score-form');
 const refreshButton = document.querySelector('#refresh');
 

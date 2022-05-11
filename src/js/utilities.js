@@ -11,15 +11,14 @@ const updateDom = (users) => {
   });
 };
 
+const fetchUsers = async () => {
+  const data = await fetch(url);
+  return data.json();
+};
+
 const insertUsers = async () => {
   const users = await fetchUsers();
   updateDom(users.result);
-};
-
-const fetchUsers = async () => {
-  let data = await fetch(url);
-
-  return await data.json();
 };
 
 const addUser = async (data) => {
@@ -29,8 +28,6 @@ const addUser = async (data) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ user: data[0], score: data[1] }),
-  }).catch((error) => {
-    return error;
   });
 };
 
