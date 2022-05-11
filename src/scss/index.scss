@@ -12,7 +12,7 @@ a {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
   min-height: 100vh;
 }
 
@@ -36,10 +36,6 @@ button {
 button:hover {
   background: #f6f6f7;
   outline: 1px solid transparent;
-}
-
-table {
-  border: 1px solid #444;
 }
 
 .input {
@@ -68,6 +64,7 @@ table {
 
 table {
   border-spacing: 0;
+  border: solid 1px #444;
 }
 
 tr:nth-child(even) {
