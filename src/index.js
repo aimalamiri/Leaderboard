@@ -15,10 +15,12 @@ refreshButton.addEventListener('click', () => {
 scoreForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const name = document.querySelector('#name');
-  const score = document.querySelector('#score');
+  const name = document.querySelector('#name').value.trim();
+  const score = document.querySelector('#score').value.trim();
 
-  await addUser([name.value, score.value]);
-  insertUsers();
-  e.target.reset();
+  if (name !== '' && score !== '') {
+    await addUser([name, score]);
+    insertUsers();
+    e.target.reset();
+  }
 });
